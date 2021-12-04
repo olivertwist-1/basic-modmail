@@ -3,10 +3,7 @@ from discord.ext import commands
 import json
 from discord.ext.commands import MissingPermissions
 
-intents = discord.Intents.default()
-intents.members = True
-
-bot = commands.Bot(command_prefix="your_prefix", help_command=None, intents=intents.all())
+bot = commands.Bot(command_prefix="your_prefix", help_command=None, intents=discord.Intents.all())
 
 cogs = ['modmail']
 
